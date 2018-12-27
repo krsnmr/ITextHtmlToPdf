@@ -29,6 +29,7 @@ import java.util.Map;
 
 public class Example4CreateDocFromHtml {
 
+    // тип создаваемого документа: Схема выключения и Эскиз на ликвидацию течи
     private enum TypeDoc {None, TurnOff, FixLeak}
 
     public static void main(String[] args) throws IOException, DocumentException {
