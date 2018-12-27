@@ -38,15 +38,14 @@ public class Example4CreateDocFromHtml {
         File file1 = File.createTempFile("example_", ".pdf", dir);
         String pdfPath = file1.getAbsolutePath();
 
-
-        //1
+        //1 заполнить поля шаблона значениями из объекта
         String content = ReplaceFields(TypeDoc.TurnOff);
-        //2
+        //2 заполнить тег картинки
         content = ReplaceImageTag(content);
 
+        // создание pdf при помощи itext
         Document document = new Document();
         document.setPageSize(PageSize.A4.rotate());
-
 
         PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(pdfPath));
         document.open();
@@ -69,10 +68,7 @@ public class Example4CreateDocFromHtml {
         XMLWorker worker = new XMLWorker(css, true);
         XMLParser p = new XMLParser(worker);
 
-
         p.parse(new ByteArrayInputStream(content.getBytes()));
-
-
         document.close();
 
         System.out.println("file1 - " + pdfPath);
