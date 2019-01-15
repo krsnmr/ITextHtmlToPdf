@@ -1,3 +1,5 @@
 
-# Example of a `.gitattributes` file which reclassifies `.rb` files as Java:
-*.rb linguist-language=Java
+# Some examples of various styles:
+vim: syntax=java
+vim: set syntax=html:
+
