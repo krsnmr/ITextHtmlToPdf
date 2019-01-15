@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Схема выключения</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size:12px;
+            vertical-align: baseline;
+        }
+
+        body {
+            line-height: 1.2;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .clear:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        .clear {
+            zoom: 1;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+
+        .item-block{                     
+            text-align: center;
+            padding: 4px;
+        }
+
+        .item-block-left{    
+            float: left;                    
+            padding: 4px;
+        }
+
+        .item-block-right{    
+            float: right;        
+            text-align: center;
+            padding: 4px;
+        }
+
+        .table-main {
+            width: 100%;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            border-collapse: collapse;
+
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-right-color: black;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-bottom-color: black;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        .table-main td,
+        .table-main th {
+            font-size: 1.0em;
+           /* border: 1px solid #333;*/
+            padding: 3px 7px 2px 7px;
+            border-collapse: collapse;
+
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-top-color: black;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-left-color: black;
+            border-left-width: 1px;
+            border-left-style: solid;
+        }
+
+        .table-main th {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            font-weight: normal;
+            
+            
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-top-color: black;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-left-color: black;
+            border-left-width: 1px;
+            border-left-style: solid;
+        }
+
+        .img-block {            
+            margin: 10px; 
+            position: relative;                 
+        }
+
+        .img-block img {           
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: 150px;
+            margin-top:150px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="clear">
+            <div class="item-block-left">
+                Схема выключения водопроводной линии Д =
+                <span>${edge_diameter}</span> мм
+            </div>
+            <div class="item-block-right">
+                по адресу
+                <span>${address}</span>
+            </div>
+        </div> 
+        
+            <table class="table-main">
+
+                <tr>
+                    <th rowspan="4">От:
+                        <br/>
+                        <span>${from_address}</span>
+                        <br/> До:
+                        <br/>
+                        <span>${to_address}</span>
+                    </th>
+                    <th>Закрыть
+                        <br/>задв. NN</th>
+                    <th>К-во
+                        <br/>задв.</th>
+                    <th colspan="2">Без воды</th>
+                    <th rowspan="2">Выключил
+                        <br/> Ф.И.О.
+                        <br/> Дата, подпись
+                    </th>
+                    <th>Задвижки
+                        <br/> NN
+                    </th>
+                    <th>К-во
+                        <br/> обор
+                        <br/> отов
+                    </th>
+                    <th>Принял
+                        <br/> Диспетч.
+                    </th>
+                    <th rowspan="2">Включил
+                        <br/> Ф.И.О.
+                        <br/> Дата, подпись
+                    </th>
+                    <th>Задвижки
+                        <br/> NN
+                    </th>
+                    <th rowspan="2">
+                        К-во
+                        <br/> обор
+                        <br/> отов
+                    </th>
+                    <th rowspan="2">Принял
+                        <br/> Диспетч.
+                    </th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Д/вв.</td>
+                    <td>ПГ</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>${to_close_valve_ids}</span>
+                    </td>
+                    <td>
+                        <span>${valves_count}</span>
+                    </td>
+                    <td>
+                        <span>${no_water_house_inputs_ids}</span>
+                    </td>
+                    <td>
+                        <span>${no_water_hydrant_ids}</span>
+                    </td>
+                    <td>
+                        <span>${details_off_fio}</span>
+                    </td>
+                    <td>
+                        <span>${details_off_valve_ids}</span>
+                    </td>
+                    <td>
+                        <span>${details_off_turns_count}</span>
+                    </td>
+                    <td>
+                        <span>${details_off_dispatcher}</span>
+                    </td>
+                    <td>
+                        <span>${details_on_fio}</span>
+                    </td>
+                    <td>
+                        <span>${details_on_valve_ids}</span>
+                    </td>
+                    <td>
+                        <span>${details_on_turns_count}</span>
+                    </td>
+                    <td>
+                        <span>${details_on_dispatcher}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span>${details_off_date}</span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <span>${details_on_date}</span>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+       
+        <div class="clear">
+            <div class="item-block-left">
+                Объекты социального назначения
+                <br/>
+                <span>${social_important_buildings}</span>
+            </div>
+            <div class="item-block-right">
+                Адрес пункта водораздачи
+                <br/>
+                <span>${water_dispense_address}</span>
+                <br/> Адрес ТОП
+                <br/>
+                <span>${top_address}</span>
+                <br/> Дополнительная информация
+                <br/>
+                <span>${additional_info}</span>
+            </div>
+        </div>
+
+        <div class="img-block">
+                <img src="${item_image}" />
+        </div>
+            
+        
+
+        <div class="item-block">
+                Схему составил: Ф.И.О.
+                <span>${signatures_author}</span>
+                Подпись _____________  
+                
+                Дата <span>${signatures_date}</span> г.
+                Начальник <span>${signatures_district}</span>
+                <span>${signatures_district_boss}</span>
+        </div>
+
+        <div class="item-block">
+            <small >
+                На схеме указать: координатные таблички закрываемых задвижек, номера домов, закольцовки домовых вводов, номер зарегулированной арматуры по списку.
+            </small>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

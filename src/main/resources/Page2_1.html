@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ЭСКИЗ на ликвидацию течи</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size:12px;
+            vertical-align: baseline;
+        }
+
+        body {
+            line-height: 1.2;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .clear:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        .clear {
+            zoom: 1;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+
+        .content {
+            padding: 4px;
+        }
+
+
+        .item-block{                     
+           /* text-align: center;*/
+            padding: 4px;
+        }
+
+        .item-block-left{    
+            float: left;                    
+            padding: 4px;
+        }
+
+        .item-block-right{    
+            float: right;        
+            text-align: center;
+            padding: 4px;
+        }
+
+        .table-main {
+            width: 100%;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            border-collapse: collapse;
+
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-right-color: black;
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-bottom-color: black;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        .block-right-small{
+            width: 250px;
+            float: right;
+        }
+
+        .table-main td,
+        .table-main th {
+            font-size: 1.0em;
+           /* border: 1px solid #333;*/
+            padding: 3px 7px 2px 7px;
+            border-collapse: collapse;
+
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-top-color: black;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-left-color: black;
+            border-left-width: 1px;
+            border-left-style: solid;
+        }
+
+        .table-main th {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            font-weight: normal;
+            text-align: center;
+            
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-top-color: black;
+            border-top-width: 1px;
+            border-top-style: solid;
+            border-left-color: black;
+            border-left-width: 1px;
+            border-left-style: solid;
+        }
+
+        .img-block {            
+            margin: 4px; 
+                            
+        }
+
+        .img-block img {           
+            display: block;
+            margin-left: auto;
+            margin-right: auto           
+        }
+
+        .center-block{
+            text-align: center;
+        }
+
+
+        div.container4 {
+            height: 10em;
+            position: relative }
+        div.container4 img {
+            margin: 0;
+            background: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) }
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="center-block">
+            <strong>ЭСКИЗ на ликвидацию течи</strong>
+        </div>
+        <div class="clear">
+            <div class="item-block-left">
+                Заявка №
+                <span>${title}</span>
+                <br/> Инв.№
+                <span>${inv_number}</span>
+            </div>
+            <div class="item-block-right">
+                Административный район
+                <span>${admin_district}</span>
+                <br/> Эксплуатационный район
+                <span>${supply_district}</span>
+            </div>
+        </div>
+    
+        <table class="table-main">
+            <tr>
+                <th>Адрес работ</th>
+                <th>Диам.
+                    <br/> задв.,
+                    <br/> мм
+                </th>
+                <th>Материал
+                    <br/> трубы
+                    <br/> Год прокладки</th>
+                <th>Место работ</th>
+                <th>Глубина заложения, м</th>
+                <th>Задвижки
+                    <br/> проверены
+                    <br/> Дата
+                </th>
+                <th>Линия выключена
+                    
+                    <br/> Дата, время</th>
+                <th>Без воды
+                    <br/> дома NN</th>
+                <th>Сведения о затоплении территории; наледи</th>
+                <th>Наличие инженерных коммуникаций</th>
+            </tr>
+            <tr>
+                <td>
+                    <span>${address}</span>
+                </td>
+                <td>
+                    <span>${diameter}</span>
+                </td>
+                <td>
+                    <span>${material_year}</span>
+                </td>
+                <td>
+                    <span>${work_place}</span>
+                </td>
+                <td>
+                    <span>${edge_depth}</span>
+                </td>
+                <td>
+                    <span>${valves_check_date}</span>
+                </td>
+                <td>
+                    <span>${line_off_time}</span>
+                </td>
+                <td>
+                    <span>${houses_without_water}</span>
+                </td>
+                <td>
+                    <span>${territory_flooded_info}</span>
+                </td>
+                <td>
+                    <span>${engineering_communications}</span>
+                </td>
+            </tr>
+        </table>
+        <div class="clear">
+            <div class="block-right-small">
+                <table class="table-main">
+                    <tr>
+                        <th colspan="2">Ненужное зачеркнуть</th>
+                    </tr>
+                    <tr>
+                        <td>Работы только в</td>
+                        <td><span>${work_only_at}</span></td>
+                    </tr>
+                    <tr>
+                        <td>Требуется спил деревьев</td>
+                        <td><span>${should_remove_trees}</span></td>
+                    </tr>
+                    <tr>
+                        <td>Требуется убрать А/М</td>
+                        <td><span>${should_remove_cars}</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="img-block"><!-- container4 -->
+                <img src="" />
+        </div>
+        <div class="item-block">
+                Эскиз составил:<br/> 
+                Дата <span>${signatures_date}</span>&nbsp;&nbsp;
+                Подпись _____________ &nbsp;&nbsp; 
+                Ф.И.О.
+                <span>${signatures_author}</span>
+                
+                
+                	   
+                                      
+        </div>
+
+        <div class="item-block">
+            <small >
+                    Наличие инженерных коммуникаций указать до и после СМР (опоры ЛЭП, мачты, светофоры и т.д.)
+            </small>
+        </div>
+
+    </div>
+    
+</body>
+</html>
