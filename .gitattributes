@@ -1,5 +1,3 @@
 
-# Some examples of various styles:
-vim: syntax=java
-vim: set syntax=html:
-
+-*- mode: php; -*-
+-*- c++ -*-
